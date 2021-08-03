@@ -1,0 +1,53 @@
+html {
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c4b33;
+}
+
+body {
+    width: 720px;
+    margin: 0 auto;
+    background-color: #44b78b;
+    padding: 2 20px 20px 20px;
+    border: 5px solid white;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+    color: #0c4b33;
+    text-align: center;
+}
+
+h2 {
+    color: #0c4b33;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+
+p {
+    color: #0c4b33;
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.profile {
+    display: block;
+    margin: 10 auto;
+    max-width: 720px;
+}
