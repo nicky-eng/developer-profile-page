@@ -59,8 +59,11 @@ p {
 }
 
 .skill-badges {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
     padding-bottom: 20px;
 }
 
@@ -69,7 +72,13 @@ p {
     margin: 0 auto;
     border-radius: 0;
     border: none;
-    height: 100px;
+    width: 100px;
+}
+
+.skill-badges figcaption {
+    text-align: center;
+    color: #0c4b33;
+    font-size: medium;
 }
 
 footer {
