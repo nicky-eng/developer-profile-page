@@ -64,7 +64,7 @@ nav li a {
     color: white;
     text-transform: uppercase;
     padding: 10px;
-    float: right;
+    float:inline-start;
 }
 
 nav li a:visited, nav li a {
@@ -109,6 +109,16 @@ nav li a:visited, nav li a {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 0 1rem;
   padding-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+
+.project img {
+  padding: 1.5rem;
 }
 
 #technologies {
