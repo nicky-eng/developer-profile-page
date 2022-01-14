@@ -8,18 +8,33 @@
 
         <link href="styles/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">   
         
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#technologies">Technologies</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+        </nav>
+
+          
         <div class="profile">
-            <h1>Nicolas A. Oyarzabal</h1>
-            <h3>Python Developer - Mechanical Engineer</h3>
+ 
+                <h1>Nicolas A. Oyarzabal</h1>
+
+
+            <div>
+                <h3>Python Developer - Mechanical Engineer</h3>
+            </div>
             
             <div class="my-picture">
                 <img src="media/nicky-headshot.png" width=320px alt="A portrait of Nicolas in a black t-shirt">
             </div>
 
-            <div>  
+            <div id="about">  
                 <h2>About me</h2>
                 <p>After graduating in Mechanical Engineering I worked in the OCTG industry 
                     and later I was a full-time head teaching assistant at the Mechanical Engineering
@@ -33,7 +48,7 @@
                     backend development using Python and Django. </p>
                 <h2>Technologies I work with</h2>
 
-                <div class='skill-badges' id="skill-badges">
+                <div class='technologies' id="technologies">
                     <figure>
                         <img src='media/python.png', alt='The blue and yellow Python logo.'>
                         <figcaption>Python</figcaption>
@@ -80,6 +95,12 @@
 
         <footer>
             Copyright &#169 2022 Nicolas A. Oyarzabal. All Rights Reserved.
+            <div class="footer-contact" id="contact">
+                <a href="https://www.linkedin.com/in/noyarzab/" class="fab fa-linkedin"></a>  
+                <a href="https://twitter.com/noyarzab" class="fab fa-twitter"></a>
+                <a href="https://github.com/nicky-eng" class="fab fa-github"></a>
+                <a href="https://www.hackerrank.com/nicky_eng" class="fab fa-hackerrank"></a>
+            </div>
         </footer>
         
         <script src="scripts/main.js"></script>
