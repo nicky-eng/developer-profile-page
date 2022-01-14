@@ -102,6 +102,15 @@ nav li a:visited, nav li a {
   padding: 20px;
 }
 
+.projects-details {
+  display:grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0 1rem;
+  padding-bottom: 20px;
+}
+
 #technologies {
   background: lightgrey;
   padding: 2rem 2rem;
@@ -122,6 +131,7 @@ nav li a:visited, nav li a {
     border-radius: 0;
     border: none;
     width: 100px;
+    color:#0c4b33
 }
 
 .technologies figcaption {
