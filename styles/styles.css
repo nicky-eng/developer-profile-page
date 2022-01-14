@@ -42,7 +42,6 @@ p {
     line-height: 1.5rem;
     padding: 20px;
     margin: 0 auto;
-    background-color: lightgrey;
 }
 
 nav {
@@ -73,6 +72,10 @@ nav li a:visited, nav li a {
     color: white;
 }
 
+.my-picture {
+  padding: 2rem 0;
+}
+
 .my-picture img {
     display: block;
     margin: 0 auto;
@@ -88,6 +91,20 @@ nav li a:visited, nav li a {
     padding: 20px 0;
     /* border: 5px solid white; */
     
+}
+#about {
+  background: lightgrey;
+  padding: 2rem;
+}
+
+.projects {
+  display: flex-grow;
+  padding: 20px;
+}
+
+#technologies {
+  background: lightgrey;
+  padding: 2rem 2rem;
 }
 
 .technologies {
