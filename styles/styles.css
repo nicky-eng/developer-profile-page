@@ -72,36 +72,13 @@ nav li a:visited, nav li a {
     color: white;
 }
 
+.home-contact {
+  text-align: center;
+}
+
 .my-picture {
   padding: 2rem 0;
-}
 
-nav {
-    display: inline-block;
-    position: sticky;
-    top: 0px;
-    padding: 0;
-    background-color: gray;
-    width: 100%;
-    margin: 0px;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0px;
-    
-}
-
-nav li a {
-    display:inline;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px;
-    float: right;
-}
-
-nav li a:visited, nav li a {
-    text-decoration: none;
-    color: white;
 }
 
 .my-picture img {
@@ -117,14 +94,13 @@ nav li a:visited, nav li a {
     margin: 0 auto;
     background-color: #44b78b;
     padding: 20px 0;
-    /* border: 5px solid white; */
+
     
 }
 #about {
   background: lightgrey;
   padding: 2rem;
 }
-
 
 .projects {
   display: flex-grow;
@@ -146,6 +122,12 @@ nav li a:visited, nav li a {
   text-align: center;  
 }
 
+.project a {
+  color:white;
+  font-size: x-large;
+  font-weight:bold;
+}
+
 .project img {
   padding: 1.5rem;
 }
@@ -154,7 +136,6 @@ nav li a:visited, nav li a {
   background: lightgrey;
   padding: 2rem 2rem;
 }
-
 
 .technologies {
     display: grid;
