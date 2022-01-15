@@ -72,6 +72,10 @@ nav li a:visited, nav li a {
     color: white;
 }
 
+.home-contact {
+  text-align: center;
+}
+
 .my-picture {
   padding: 2rem 0;
 }
@@ -89,7 +93,6 @@ nav li a:visited, nav li a {
     margin: 0 auto;
     background-color: #44b78b;
     padding: 20px 0;
-    /* border: 5px solid white; */
     
 }
 #about {
@@ -115,6 +118,12 @@ nav li a:visited, nav li a {
   display: flex;
   flex-direction: column;
   text-align: center;  
+}
+
+.project a {
+  color:white;
+  font-size: x-large;
+  font-weight:bold;
 }
 
 .project img {
