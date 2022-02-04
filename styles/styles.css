@@ -10,10 +10,9 @@ body {
     margin: 0 0;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a { 
+  text-decoration: none;
+ }
 
 h1 {
     font-size: 60px;
@@ -138,22 +137,32 @@ p {
 }
 
 .profile {
-    display: block;
+    display: grid;
     max-width: 80%;
     margin: 0 auto;
     background-color: #44b78b;
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 100%))
+
 
     
 }
-#about {
+#about-me {
   background: lightgrey;
   padding: 2rem;
 }
 
 .projects {
-  display: flex-grow;
+  display: grid;
   padding: 20px;
+  align-items: center;
+}
+
+.projects > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  list-style-type: none;
 }
 
 .projects-details {
@@ -190,7 +199,7 @@ p {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 0 1rem;
     padding-bottom: 20px;
 }
@@ -200,7 +209,8 @@ p {
     margin: 0 auto;
     border-radius: 0;
     border: none;
-    width: 100px;
+    width: 100%;
+    height: 100%;
     color:#0c4b33
 }
 
