@@ -44,7 +44,7 @@ p {
     margin: 0 auto;
 }
 
-nav {
+.navbar-menu {
     display: inline-block;
     position: sticky;
     top: 0px;
@@ -53,13 +53,13 @@ nav {
     width: 100%;
     margin: 0px;
 }
-nav ul {
+.navbar-menu ul {
     list-style-type: none;
     margin: 0px;
     
 }
 
-nav li a {
+.navbar-menu li a {
     display:inline;
     color: white;
     text-transform: uppercase;
@@ -67,10 +67,59 @@ nav li a {
     float:inline-start;
 }
 
-nav li a:visited, nav li a {
+.navbar-menu li a:visited, nav li a {
     text-decoration: none;
     color: white;
 }
+
+#hamburger-menu {
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: left;
+  border: none;
+  padding: 0px;
+  margin: 20px;
+  background: linear-gradient(
+    to bottom, 
+    white, white 20%, 
+    #0c4b33 20%, #0c4b33 40%, 
+    white 40%, white 60%, 
+    #0c4b33 60%, #0c4b33 80%, 
+    white 80%, white 100%
+  );
+  text-transform: uppercase;
+}
+
+#hamburger-menu ul {
+  list-style-type: none;
+  margin: 0px;
+  
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height:11em;
+  background-color: gray;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  transition:0.3s;
+}
+
+#hamburger-menu:focus #sidebar-menu,
+#hamburger-menu:focus-within #sidebar-menu  {
+    visibility: visible;
+    left: 0;
+}
+
+#navbar-menu {
+  visibility: hidden;
+}
+
 
 .home-contact {
   text-align: center;
