@@ -10,10 +10,9 @@ body {
     margin: 0 0;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a { 
+  text-decoration: none;
+ }
 
 h1 {
     font-size: 60px;
@@ -44,6 +43,8 @@ p {
     margin: 0 auto;
 }
 
+/* Navbar and Hamburger Menu */
+
 .navbar-menu {
     display: inline-block;
     position: sticky;
@@ -64,7 +65,7 @@ p {
     color: white;
     text-transform: uppercase;
     padding: 10px;
-    float:inline-start;
+    float: right;
 }
 
 .navbar-menu li a:visited, nav li a {
@@ -75,20 +76,23 @@ p {
 #hamburger-menu {
   width: 50px;
   height: 50px;
-  display: block;
+  display: none;
   text-align: left;
   border: none;
-  padding: 0px;
+  padding: 20px;
   margin: 20px;
   background: linear-gradient(
     to bottom, 
     white, white 20%, 
-    #0c4b33 20%, #0c4b33 40%, 
+    #44b78b 20%, #44b78b 40%, 
     white 40%, white 60%, 
-    #0c4b33 60%, #0c4b33 80%, 
+    #44b78b 60%, #44b78b 80%, 
     white 80%, white 100%
   );
   text-transform: uppercase;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 
 #hamburger-menu ul {
@@ -116,9 +120,15 @@ p {
     left: 0;
 }
 
-#navbar-menu {
-  visibility: hidden;
+@media screen and (max-width:750px) {
+  #navbar-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
 }
+
 
 
 .home-contact {
@@ -138,22 +148,33 @@ p {
 }
 
 .profile {
-    display: block;
-    max-width: 80%;
+    display: grid;
+    width: 100%;
+    max-width: 1040px;
     margin: 0 auto;
     background-color: #44b78b;
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 100%))
+
 
     
 }
-#about {
+#about-me {
   background: lightgrey;
   padding: 2rem;
 }
 
 .projects {
-  display: flex-grow;
+  display: grid;
   padding: 20px;
+  align-items: center;
+}
+
+.projects > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  list-style-type: none;
 }
 
 .projects-details {
@@ -190,7 +211,7 @@ p {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 0 1rem;
     padding-bottom: 20px;
 }
@@ -200,7 +221,8 @@ p {
     margin: 0 auto;
     border-radius: 0;
     border: none;
-    width: 100px;
+    width: 100%;
+    height: 100%;
     color:#0c4b33
 }
 
